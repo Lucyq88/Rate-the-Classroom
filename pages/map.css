@@ -133,11 +133,41 @@ body {
 }
 #form1 {
     width:250px;
-    height: 350px;
-    background-color: #a29325;
+    height: 375px;
+    background-color: #ECE9D2;
     text-align: center;
-    border: 20px #3C3E36;
+    border: 5px solid #F9D956;
     padding: 10px;
-    margin: 20px;
-    
+    margin: 5px;
+    position: relative;
+    top: 200px;
+    left: 600px;
+    font-family: "Trirong", serif;
+    font-size: 13px;
+    color: #14174C;
+}
+#form2 {
+    width:250px;
+    height: 375px;
+    background-color: #ECE9D2;
+    text-align: center;
+    border: 5px solid #F9D956;
+    padding: 10px;
+    margin: 5px;
+    position: relative;
+    top: 200px;
+    left: 600px;
+    font-family: "Trirong", serif;
+    font-size: 25px;
+    color: #14174C;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;   
+}
+.rate {
+    width: 60px;
+    height: auto;
 }
