@@ -1,0 +1,143 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url("images/Map.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.classrooms {
+    position: relative;
+    width: 100%;
+}
+.classrooms img{
+    height: auto;
+}
+#kresge {
+    position: absolute;
+    width: 179px;
+    left: 284px;
+    top: 123px;
+}
+#porter {
+    position: absolute;
+    width: 160px;
+    left: 282px;
+    top: 326px;
+}
+#rcc {
+    position: absolute;
+    width: 153px;
+    left: 386px;
+    top: 527px;
+}
+#oakes {
+    position: absolute;
+    width: 220px;
+    left: 509px;
+    top: 610px;
+}
+#music {
+    position: absolute;
+    width: 122px;
+    left: 633px;
+    top: 424px;
+}
+#elena {
+    position: absolute;
+    width: 151px;
+    left: 550px;
+    top: 303px;
+}
+#thim {
+    position: absolute;
+    width: 108px;
+    left: 563px;
+    top: 213px;
+}
+#phy {
+    position: absolute;
+    width: 145px;
+    left: 548px;
+    top: 144px;
+}
+#jbaskin {
+    position: absolute;
+    width: 161px;
+    left: 536px;
+    top: 26px;
+}
+#jrl {
+    position: absolute;
+    width: 248px;
+    left: 729px;
+    top: 1px;
+}
+#science {
+    position: absolute;
+    width: 114px;
+    left: 678px;
+    top: 142px;
+}
+#earth {
+    position: absolute;
+    width: 142px;
+    left: 725px;
+    top: 195px;
+}
+#class12 {
+    position: absolute;
+    width: 112px;
+    left: 847px;
+    top: 213px;
+}
+#mchenry {
+    position: absolute;
+    width: 159px;
+    left: 714px;
+    top: 300px;
+}
+#cowell {
+    position: absolute;
+    width: 208px;
+    left: 973px;
+    top: 265px;
+}
+#stev {
+    position: absolute;
+    width: 163px;
+    left: 1138px;
+    top: 212px;
+}
+#huma {
+    position: absolute;
+    width: 106px;
+    left: 1038px;
+    top: 211px;
+}
+#crown {
+    position: absolute;
+    width: 190px;
+    left: 955px;
+    top: 18px;
+}
+#merrill {
+    position: absolute;
+    width: 186px;
+    left: 1097px;
+    top: 74px;
+}
+#form1 {
+    width:250px;
+    height: 350px;
+    background-color: #a29325;
+    text-align: center;
+    border: 20px #3C3E36;
+    padding: 10px;
+    margin: 20px;
+    
+}

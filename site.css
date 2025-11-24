@@ -1,0 +1,28 @@
+body {
+    background-color: #ECE9D2;
+}
+.top {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#welcome {
+    width: 700px;
+    height: auto;
+    opacity: 0;
+} 
+#logo {
+    width: 700px;
+    height: auto;
+    opacity: 0;
+    margin-top: -700px;
+}
+#button{
+    width: 275px;
+    height: auto;
+    margin-top: -350px;
+    margin-left: 500px;
+    opacity: 0;
+}
