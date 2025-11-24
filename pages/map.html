@@ -38,8 +38,8 @@
         <img id="crown" src="images/crown.png">
         <img id="merrill" src="images/merrill.png">
     </div>
-    <div id="form1" class="hidden">
-        <form id="formpages" method="post" enctype="multipart/form-data">
+    <form id="form" method="post" enctype="multipart/form-data">
+    <div id="form1" class="formpages" style="display: none;">
             <h3>You are rating a classroom!</h3>
             <label for="building">Building:</label><br>
             <input type="text" id="building"><br>
@@ -55,9 +55,8 @@
             <input type="file" id="photo" name="photo[]" multiple><br><br>
 
             <button type="button" id="page2">Next</button>
-        </form>
     </div>
-    <div id="form2" style="display: none;">
+    <div id="form2" class="formpages" style="display: none;">
         <h3>Rate with Slugs</h3>
         <div id="slugRating">
             <img src="images/Slug1.png" data-value="1" class="rate">
@@ -66,12 +65,12 @@
             <img src="images/Slug1.png" data-value="4" class="rate">
             <img src="images/Slug1.png" data-value="5" class="rate">
         </div>
-         <input type="hidden" name="rating" id="rating">
+        <input type="hidden" name="rating" id="rating">
         <br>
         <button type="button" id="prevBtn">Previous</button>
         <button type="submit">Submit</button>
     </div>
-</div>
+    </form>
 </body>
 
 </html>
