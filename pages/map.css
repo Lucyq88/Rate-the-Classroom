@@ -42,9 +42,9 @@ html, body {
 }
 #rcc {
     position: absolute;
-    width: 153px;
-    left: 386px;
-    top: 527px;
+    width: 170px;
+    left: 370px;
+    top: 575px;
 }
 #oakes {
     position: absolute;
@@ -72,9 +72,9 @@ html, body {
 }
 #phy {
     position: absolute;
-    width: 145px;
-    left: 548px;
-    top: 144px;
+    width: 170px;
+    left: 555px;
+    top: 130px;
 }
 #jbaskin {
     position: absolute;
@@ -84,63 +84,63 @@ html, body {
 }
 #jrl {
     position: absolute;
-    width: 248px;
-    left: 729px;
-    top: 1px;
+    width: 280px;
+    left: 765px;
+    top: -35px;
 }
 #science {
     position: absolute;
-    width: 114px;
-    left: 678px;
-    top: 142px;
+    width: 140px;
+    left: 700px;
+    top: 125px;
 }
 #earth {
     position: absolute;
-    width: 142px;
-    left: 725px;
-    top: 195px;
+    width: 165px;
+    left: 760px;
+    top: 185px;
 }
 #class12 {
     position: absolute;
-    width: 112px;
-    left: 847px;
+    width: 125px;
+    left: 902px;
     top: 213px;
 }
 #mchenry {
     position: absolute;
-    width: 159px;
-    left: 714px;
-    top: 300px;
+    width: 180px;
+    left: 750px;
+    top: 312px;
 }
 #cowell {
     position: absolute;
-    width: 208px;
-    left: 973px;
-    top: 265px;
+    width: 250px;
+    left: 1040px;
+    top: 270px;
 }
 #stev {
     position: absolute;
-    width: 163px;
-    left: 1138px;
-    top: 212px;
+    width: 190px;
+    left: 1235px;
+    top: 208px;
 }
 #huma {
     position: absolute;
-    width: 106px;
-    left: 1038px;
-    top: 211px;
+    width: 120px;
+    left: 1120px;
+    top: 208px;
 }
 #crown {
     position: absolute;
-    width: 190px;
-    left: 955px;
-    top: 18px;
+    width: 210px;
+    left: 1028px;
+    top: -10px;
 }
 #merrill {
     position: absolute;
-    width: 186px;
-    left: 1097px;
-    top: 74px;
+    width: 215px;
+    left: 1188px;
+    top: 50px;
 }
 
 html, body {
