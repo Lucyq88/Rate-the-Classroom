@@ -11,7 +11,7 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-    <!-- JS -->
+    <!-- JavaScript -->
     <script src="../site.js" defer></script>
 </head>
 
@@ -19,30 +19,24 @@
 
     <h1>Select a Classroom to Rate</h1>
 
-    <!-- CLICKABLE IMAGES -->
+    <!-- Classroom Images -->
     <div class="classroom-container">
-        <img src="../images/class1.png" class="click-image">
-        <img src="../images/class2.png" class="click-image">
-        <img src="../images/class3.png" class="click-image">
+        <img src="../images/class1.png" class="click-image" alt="Classroom 1">
+        <img src="../images/class2.png" class="click-image" alt="Classroom 2">
+        <img src="../images/class3.png" class="click-image" alt="Classroom 3">
     </div>
 
-    <!-- POP-UP FORM (Hidden Until Click) -->
-    <form id="popupForm" style="display:none;" class="popup-form">
-
+    <!-- Rating Form (Hidden by Default) -->
+    <form id="popupForm" class="popup-form" style="display: none;">
         <h2>Rate This Classroom</h2>
 
         <label for="rating">Rating (1–10):</label>
         <input type="number" id="rating" min="1" max="10">
 
-        <br><br>
-
         <label for="comments">Comments:</label>
         <textarea id="comments" rows="4"></textarea>
 
-        <br><br>
-
         <button type="submit">Submit</button>
-
     </form>
 
 </body>
