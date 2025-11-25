@@ -1,43 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- All techy stuff goes here, inside HEAD -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Classroom Map</title>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="../site.css">
-
-    <!-- jQuery -->
+    <!-- Overall title of your page -->
+    <title>Rate A Classroom</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="site.css">
+    <!-- jQuery library -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
-    <!-- JavaScript -->
-    <script src="../site.js" defer></script>
+    <!-- Link to external JavaScript file -->
+    <script src="site.js" defer></script>
 </head>
 
 <body>
-
-    <h1>Select a Classroom to Rate</h1>
-
-    <!-- Classroom Images -->
-    <div class="classroom-container">
-        <img src="../images/class1.png" class="click-image" alt="Classroom 1">
-        <img src="../images/class2.png" class="click-image" alt="Classroom 2">
-        <img src="../images/class3.png" class="click-image" alt="Classroom 3">
+    <div class="top">
+        <img id="welcome" src="images/wl.png">
+        <img id="logo" src="images/logoyellow.png">
+        <a href="pages/map.html">
+            <img id="button" src="images/Take me.png">
+        </a>
     </div>
-
-    <!-- Rating Form (Hidden by Default) -->
-    <form id="popupForm" class="popup-form" style="display: none;">
-        <h2>Rate This Classroom</h2>
-
-        <label for="rating">Rating (1–10):</label>
-        <input type="number" id="rating" min="1" max="10">
-
-        <label for="comments">Comments:</label>
-        <textarea id="comments" rows="4"></textarea>
-
-        <button type="submit">Submit</button>
-    </form>
-
 </body>
+
 </html>
