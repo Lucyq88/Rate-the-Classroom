@@ -36,35 +36,40 @@
     </div>
 
 
-    <form id="draggable-form" method="post" enctype="multipart/form-data">
+    <form id="draggable-form" method="post" enctype="multipart/form-data" style="display: none;">
         <h3>You are rating a classroom!</h3>
 
-        <label>Building Name and Room #:</label>
-        <input type="text" id="building" required><br>
+        <label>Building Name:</label>
+        <select id="building" required>
+            <option value="" disabled selected>Select from map or list</option>
+            <!-- Options will be populated by JS -->
+        </select>
+
+        <label>Room #:</label>
+        <input type="text" id="room" placeholder="e.g. 101" required>
         
-        <div class="rate-container">
-            <img src="images/Slug1.png" data-value="1" class="rate" data-counter="0">
-            <span class="counter-badge">0</span>
-        </div>
-        <div class="rate-container">
-            <img src="images/Slug1.png" data-value="2" class="rate" data-counter="0">
-            <span class="counter-badge">0</span>
-        </div>
-        <div class="rate-container">
-            <img src="images/Slug1.png" data-value="3" class="rate" data-counter="0">
-            <span class="counter-badge">0</span>
-        </div>
-        <div class="rate-container">
-            <img src="images/Slug1.png" data-value="4" class="rate" data-counter="0">
-            <span class="counter-badge">0</span>
-        </div>
-        <div class="rate-container">
-            <img src="images/Slug1.png" data-value="5" class="rate" data-counter="0">
-            <span class="counter-badge">0</span>
+        <div id="slug-rating-container" class="rating-group" data-input-id="rating">
+            <img src="images/Slug1.png" data-value="1" class="rate">
+            <img src="images/Slug1.png" data-value="2" class="rate">
+            <img src="images/Slug1.png" data-value="3" class="rate">
+            <img src="images/Slug1.png" data-value="4" class="rate">
+            <img src="images/Slug1.png" data-value="5" class="rate">
         </div> 
 
+        <label>Lighting:</label>
+        <div id="bulb-rating-container" class="rating-group" data-input-id="bulb-rating">
+            <img src="images/bulb.png" data-value="1" class="rate">
+            <img src="images/bulb.png" data-value="2" class="rate">
+            <img src="images/bulb.png" data-value="3" class="rate">
+            <img src="images/bulb.png" data-value="4" class="rate">
+            <img src="images/bulb.png" data-value="5" class="rate">
+        </div>
+
         <input type="hidden" name="rating" id="rating">
+        <input type="hidden" name="bulb-rating" id="bulb-rating">
         <button type="submit">Submit</button>
+        
+        <button type="button" id="close-form">Go Back to Map</button>
 
         <button type="button" onclick="window.location.href='submissions.html'">
         View All Ratings

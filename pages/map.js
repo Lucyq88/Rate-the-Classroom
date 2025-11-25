@@ -20,17 +20,80 @@ const merrill = document.getElementById("merrill");
 
 
 $(document).ready(function() {
-    $(".rate").click(function() {
-       
-        let count = parseInt($(this).attr("data-counter")) + 1;
-        $(this).attr("data-counter", count);
+    const buildingNames = {
+        "kresge": "Kresge College",
+        "porter": "Porter College",
+        "rcc": "Rachel Carson College",
+        "oakes": "Oakes College",
+        "music": "Music Center",
+        "elena": "Elena Baskin Visual Arts",
+        "thim": "Thimann Labs",
+        "phy": "Physical Sciences",
+        "jbaskin": "Jack Baskin Engineering",
+        "jrl": "John R. Lewis College",
+        "science": "Science & Engineering Library",
+        "earth": "Earth & Marine Sciences",
+        "class12": "Classroom Unit",
+        "mchenry": "McHenry Library",
+        "cowell": "Cowell College",
+        "stev": "Stevenson College",
+        "huma": "Humanities",
+        "crown": "Crown College",
+        "merrill": "Merrill College"
+    };
 
-     
-        $(this).siblings(".counter-badge").text(count);
-
-    
-        $("#rating").val($(this).data("value"));
+    // Populate the select dropdown
+    const $buildingSelect = $("#building");
+    Object.values(buildingNames).sort().forEach(name => {
+        $buildingSelect.append(new Option(name, name));
     });
+
+    // Building click handler
+    $(".classrooms img").click(function() {
+        const id = $(this).attr("id");
+        const name = buildingNames[id] || id; // Fallback to ID if name not found
+        
+        $("#draggable-form").show(); // Show the form
+        $buildingSelect.val(name); // Set the dropdown value
+    });
+
+    // Close form handler
+    $("#close-form").click(function() {
+        $("#draggable-form").hide();
+    });
+
+    $(".rating-group").each(function() {
+        const $group = $(this);
+        const inputId = $group.data("input-id");
+        const $input = $("#" + inputId);
+        let currentRating = 0;
+
+        // Hover effect
+        $group.find(".rate").hover(function() {
+            let hoverValue = $(this).data("value");
+            updateVisuals($group, hoverValue);
+        }, function() {
+            // Mouse leave - revert to current rating
+            updateVisuals($group, currentRating);
+        });
+
+        // Click effect
+        $group.find(".rate").click(function() {
+            currentRating = $(this).data("value");
+            $input.val(currentRating);
+            updateVisuals($group, currentRating);
+        });
+    });
+
+    function updateVisuals($container, value) {
+        $container.find(".rate").each(function() {
+            if ($(this).data("value") <= value) {
+                $(this).addClass("filled");
+            } else {
+                $(this).removeClass("filled");
+            }
+        });
+    }
 });
 
 const dragElement = document.getElementById("draggable-form");
@@ -38,6 +101,11 @@ const dragElement = document.getElementById("draggable-form");
 let offsetX = 0, offsetY = 0, isDragging = false;
 
 dragElement.addEventListener("mousedown", function(e) {
+    // Prevent dragging when interacting with form inputs
+    if (['INPUT', 'SELECT', 'TEXTAREA', 'BUTTON', 'LABEL'].includes(e.target.tagName)) {
+        return;
+    }
+
     isDragging = true;
     offsetX = e.clientX - dragElement.offsetLeft;
     offsetY = e.clientY - dragElement.offsetTop;
