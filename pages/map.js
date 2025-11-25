@@ -18,3 +18,39 @@ const huma = document.getElementById("huma");
 const crown = document.getElementById("crown");
 const merrill = document.getElementById("merrill");
 
+
+$(document).ready(function() {
+    $(".rate").click(function() {
+       
+        let count = parseInt($(this).attr("data-counter")) + 1;
+        $(this).attr("data-counter", count);
+
+     
+        $(this).siblings(".counter-badge").text(count);
+
+    
+        $("#rating").val($(this).data("value"));
+    });
+});
+
+const dragElement = document.getElementById("draggable-form");
+
+let offsetX = 0, offsetY = 0, isDragging = false;
+
+dragElement.addEventListener("mousedown", function(e) {
+    isDragging = true;
+    offsetX = e.clientX - dragElement.offsetLeft;
+    offsetY = e.clientY - dragElement.offsetTop;
+    dragElement.style.cursor = "grabbing";
+});
+
+document.addEventListener("mousemove", function(e) {
+    if (!isDragging) return;
+    dragElement.style.left = (e.clientX - offsetX) + "px";
+    dragElement.style.top = (e.clientY - offsetY) + "px";
+});
+
+document.addEventListener("mouseup", function() {
+    isDragging = false;
+    dragElement.style.cursor = "move";
+});

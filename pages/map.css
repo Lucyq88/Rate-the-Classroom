@@ -1,22 +1,26 @@
-html,
-body {
+html, body {
     height: 100%;
     margin: 0;
 }
 
-body {
-    background-image: url("images/Map.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-.classrooms {
-    position: relative;
+.map-background {
     width: 100%;
+    height: 100%;
+    display: block;
 }
-.classrooms img{
-    height: auto;
+
+.classrooms {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
+
+.classrooms img {
+    position: absolute;
+}
+
 #kresge {
     position: absolute;
     width: 179px;
@@ -131,28 +135,76 @@ body {
     left: 1097px;
     top: 74px;
 }
-#form1 {
-    width:250px;
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url("images/Map.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.classrooms {
+    position: relative;
+    width: 100%;
+}
+
+.classrooms img{
+    height: auto;
+}
+
+
+
+#draggable-form {
+    width: 250px;
     height: 375px;
     background-color: #ECE9D2;
     text-align: center;
     border: 5px solid #F9D956;
     padding: 10px;
-    margin: 5px;
-    position: relative;
+    position: absolute;  
     top: 200px;
     left: 600px;
     font-family: "Trirong", serif;
     font-size: 13px;
     color: #14174C;
-
+    cursor: move;
     display: flex;
     justify-content: center;
     gap: 5px;
-    align-items: center;  
+    align-items: center;
     flex-wrap: wrap;
 }
+
+.rate-container {
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+}
+
 .rate {
-    width: 20px;
-    height: auto;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.rate:hover {
+    transform: scale(1.1);
+}
+
+.counter-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 4px 7px;
+    font-size: 14px;
+    font-weight: bold;
 }

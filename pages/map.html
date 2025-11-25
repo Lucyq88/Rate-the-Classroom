@@ -2,18 +2,14 @@
 <html lang="en">
 
 <head>
-    <!-- All techy stuff goes here, inside HEAD -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Overall title of your page -->
     <title>Rate A Classroom Map</title>
-    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="map.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
-    <!-- jQuery library -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <!-- Link to external JavaScript file -->
     <script src="map.js" defer></script>
+    <script src="drag.js" defer></script>
 </head>
 
 <body>
@@ -38,20 +34,36 @@
         <img id="crown" src="images/crown.png">
         <img id="merrill" src="images/merrill.png">
     </div>
-    <form id="form" method="post" enctype="multipart/form-data">
-    <div id="form1" class="formpages" style="">
-            <h3>You are rating a classroom!</h3>
-            <label for="kresge">Kresge</label><br>
-            <img src="images/Slug1.png" data-value="1" class="rate">
-            <img src="images/Slug1.png" data-value="2" class="rate">
-            <img src="images/Slug1.png" data-value="3" class="rate">
-            <img src="images/Slug1.png" data-value="4" class="rate">
-            <img src="images/Slug1.png" data-value="5" class="rate">
-           <input type="hidden" name="rating" id="rating">
 
-            <button type="submit">Submit</button>
-        <br>
-    </div>
+  
+    <form id="draggable-form" method="post" enctype="multipart/form-data">
+        <h3>You are rating a classroom!</h3>
+
+        <label for="kresge">Kresge</label><br>
+
+        <div class="rate-container">
+            <img src="images/Slug1.png" data-value="1" class="rate" data-counter="0">
+            <span class="counter-badge">0</span>
+        </div>
+        <div class="rate-container">
+            <img src="images/Slug1.png" data-value="2" class="rate" data-counter="0">
+            <span class="counter-badge">0</span>
+        </div>
+        <div class="rate-container">
+            <img src="images/Slug1.png" data-value="3" class="rate" data-counter="0">
+            <span class="counter-badge">0</span>
+        </div>
+        <div class="rate-container">
+            <img src="images/Slug1.png" data-value="4" class="rate" data-counter="0">
+            <span class="counter-badge">0</span>
+        </div>
+        <div class="rate-container">
+            <img src="images/Slug1.png" data-value="5" class="rate" data-counter="0">
+            <span class="counter-badge">0</span>
+        </div>
+
+        <input type="hidden" name="rating" id="rating">
+        <button type="submit">Submit</button>
     </form>
 </body>
 
