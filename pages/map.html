@@ -39,36 +39,18 @@
         <img id="merrill" src="images/merrill.png">
     </div>
     <form id="form" method="post" enctype="multipart/form-data">
-    <div id="form1" class="formpages" style="display: none;">
+    <div id="form1" class="formpages" style="">
             <h3>You are rating a classroom!</h3>
-            <label for="building">Building:</label><br>
-            <input type="text" id="building"><br>
-            <label for="room">Room #:</label><br>
-            <input type="text" id="room"><br>
-            <label for="access">Elevator:</label><br>
-            <input type="text" id="access"><br>
-            <label for="desk">Desk Comfortability</label><br>
-            <input type="text" id="desk"><br>
-            <label for="comments">Comments:</label><br>
-            <input type="text" id="comments"><br>
-            <label for="photo">Upload Photos:</label><br>
-            <input type="file" id="photo" name="photo[]" multiple><br><br>
-
-            <button type="button" id="page2">Next</button>
-    </div>
-    <div id="form2" class="formpages" style="display: none;">
-        <h3>Rate with Slugs</h3>
-        <div id="slugRating">
+            <label for="kresge">Kresge</label><br>
             <img src="images/Slug1.png" data-value="1" class="rate">
             <img src="images/Slug1.png" data-value="2" class="rate">
             <img src="images/Slug1.png" data-value="3" class="rate">
             <img src="images/Slug1.png" data-value="4" class="rate">
             <img src="images/Slug1.png" data-value="5" class="rate">
-        </div>
-        <input type="hidden" name="rating" id="rating">
+           <input type="hidden" name="rating" id="rating">
+
+            <button type="submit">Submit</button>
         <br>
-        <button type="button" id="prevBtn">Previous</button>
-        <button type="submit">Submit</button>
     </div>
     </form>
 </body>
