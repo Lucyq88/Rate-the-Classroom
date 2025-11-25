@@ -207,3 +207,21 @@ body {
     font-size: 14px;
     font-weight: bold;
 }
+#draggable-form {
+    display: none;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#draggable-form.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.classrooms img.clicked {
+    outline: 4px solid #FFD700;
+    filter: drop-shadow(0 0 10px #FFD700);
+    transition: outline 0.2s ease, filter 0.2s ease;
+}
