@@ -19,20 +19,41 @@ const crown = document.getElementById("crown");
 const merrill = document.getElementById("merrill");
 
 
-$(document).ready(function() {
+$(document).ready(function () {
+
+    // --- Existing rating click code ---
     $(".rate").click(function() {
-       
         let count = parseInt($(this).attr("data-counter")) + 1;
         $(this).attr("data-counter", count);
-
-     
         $(this).siblings(".counter-badge").text(count);
-
-    
         $("#rating").val($(this).data("value"));
+    });
+
+    // --- Classroom image click / form show ---
+    $(".classrooms img").click(function () {
+
+        // prevent spam double-click highlighting
+        if ($(this).hasClass("clicked")) return;
+
+        // highlight building
+        $(this).addClass("clicked");
+
+        // remove highlight after 1 second
+        setTimeout(() => {
+            $(this).removeClass("clicked");
+        }, 1000);
+
+        // show form with animation class
+        $("#draggable-form")
+            .addClass("show")
+            .show();
+
+        // auto-fill building name
+        $("#building").val($(this).attr("id"));
     });
 });
 
+// --- Existing drag code (unchanged) ---
 const dragElement = document.getElementById("draggable-form");
 
 let offsetX = 0, offsetY = 0, isDragging = false;
@@ -54,4 +75,3 @@ document.addEventListener("mouseup", function() {
     isDragging = false;
     dragElement.style.cursor = "move";
 });
-
