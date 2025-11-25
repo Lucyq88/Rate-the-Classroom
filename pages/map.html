@@ -35,12 +35,13 @@
         <img id="merrill" src="images/merrill.png">
     </div>
 
-  
+
     <form id="draggable-form" method="post" enctype="multipart/form-data">
         <h3>You are rating a classroom!</h3>
 
-        <label for="kresge">Kresge</label><br>
-
+        <label>Building Name and Room #:</label>
+        <input type="text" id="building" required><br>
+        
         <div class="rate-container">
             <img src="images/Slug1.png" data-value="1" class="rate" data-counter="0">
             <span class="counter-badge">0</span>
@@ -60,10 +61,13 @@
         <div class="rate-container">
             <img src="images/Slug1.png" data-value="5" class="rate" data-counter="0">
             <span class="counter-badge">0</span>
-        </div>
+        </div> 
 
         <input type="hidden" name="rating" id="rating">
         <button type="submit">Submit</button>
+
+        <button type="button" onclick="window.location.href='submissions.html'">
+        View All Ratings
     </form>
 </body>
 

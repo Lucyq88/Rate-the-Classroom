@@ -1,0 +1,17 @@
+body {
+    background: #ECE9D2;
+    font-family: "Trirong", serif;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 8px 15px;
+    background: #F9D956;
+    border: 2px solid #14174C;
+    cursor: pointer;
+    font-size: 16px;
+}

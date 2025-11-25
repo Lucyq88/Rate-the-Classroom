@@ -158,7 +158,6 @@ body {
 }
 
 
-
 #draggable-form {
     width: 250px;
     height: 375px;
@@ -187,8 +186,8 @@ body {
 }
 
 .rate {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: auto;
     cursor: pointer;
     transition: transform 0.2s;
 }
