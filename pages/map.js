@@ -94,6 +94,31 @@ $(document).ready(function() {
             }
         });
     }
+    // Handle form submission
+$("#draggable-form").submit(function(e) {
+    e.preventDefault();
+
+    const entry = {
+        building: $("#building").val(),
+        room: $("#room").val(),
+        rating: $("#rating").val(),
+        lighting: $("#bulb-rating").val(),
+        timestamp: new Date().toISOString()
+    };
+
+    // Get existing ratings or create empty array
+    let allRatings = JSON.parse(localStorage.getItem("ratings")) || [];
+
+    // Add new entry
+    allRatings.push(entry);
+
+    // Save back to localStorage
+    localStorage.setItem("ratings", JSON.stringify(allRatings));
+
+    alert("Your rating has been submitted!");
+    $("#draggable-form").hide();
+    $("#draggable-form")[0].reset();
+});
 });
 
 const dragElement = document.getElementById("draggable-form");
