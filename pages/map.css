@@ -251,3 +251,31 @@ body {
 .rate:hover {
     transform: scale(1.2);
 }
+
+body, html {
+    overflow-x: hidden;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+}
+
+#map-image {
+    width: 125%;
+    display: block;
+    left:20%
+}
+
+.classrooms {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none; /* optional */
+}
+
+.classrooms img {
+    position: absolute;
+    pointer-events: auto; /* so they can still be clicked */
+}
