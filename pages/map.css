@@ -1,3 +1,26 @@
+
+.map-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1600px;   
+    margin: 0 auto;      
+}
+
+#map-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.classrooms {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
 html, body {
     height: 100%;
     margin: 0;
@@ -30,117 +53,117 @@ html, body {
 
 #kresge {
     position: absolute;
-    width: 215px;
-    left: 245px;
-    top: 105px;
+    width: 202px;
+    left: 231px;
+    top: 96px;
 }
 #porter {
     position: absolute;
-    width: 190px;
-    left: 245px;
-    top: 340px;
+    width: 175px;
+    left: 231px;
+    top: 321px;
 }
 #rcc {
     position: absolute;
-    width: 170px;
-    left: 370px;
-    top: 575px;
+    width: 164px;
+    left: 346px;
+    top: 541px;
 }
 #oakes {
     position: absolute;
-    width: 250px;
-    left: 512px;
-    top: 670px;
+    width: 240px;
+    left: 478px;
+    top: 630px;
 }
 #music {
     position: absolute;
-    width: 140px;
-    left: 655px;
-    top: 453px;
+    width: 128px;
+    left: 618px;
+    top: 430px;
 }
 #elena {
     position: absolute;
-    width: 180px;
-    left: 555px;
-    top: 310px;
+    width: 163px;
+    left: 526px;
+    top: 296px;
 }
 #thim {
     position: absolute;
-    width: 125px;
-    left: 573px;
-    top: 210px;
+    width: 114px;
+    left: 542px;
+    top: 198px;
 }
 #phy {
     position: absolute;
-    width: 170px;
-    left: 555px;
-    top: 130px;
+    width: 160px;
+    left: 523px;
+    top: 121px;
 }
 #jbaskin {
     position: absolute;
-    width: 185px;
-    left: 541px;
-    top: -4px;
+    width: 173px;
+    left: 510px;
+    top: -5px;
 }
 #jrl {
     position: absolute;
-    width: 280px;
-    left: 765px;
+    width: 269px;
+    left: 721px;
     top: -35px;
 }
 #science {
     position: absolute;
-    width: 140px;
-    left: 700px;
-    top: 125px;
+    width: 123px;
+    left: 665px;
+    top: 120px;
 }
 #earth {
     position: absolute;
-    width: 165px;
-    left: 760px;
-    top: 185px;
+    width: 153px;
+    left: 717px;
+    top: 176px;
 }
 #class12 {
     position: absolute;
-    width: 125px;
-    left: 902px;
-    top: 213px;
+    width: 120px;
+    left: 850px;
+    top: 199px;
 }
 #mchenry {
     position: absolute;
-    width: 180px;
-    left: 750px;
-    top: 312px;
+    width: 171px;
+    left: 705px;
+    top: 294px;
 }
 #cowell {
     position: absolute;
-    width: 250px;
-    left: 1040px;
-    top: 270px;
+    width: 229px;
+    left: 986px;
+    top: 254px;
 }
 #stev {
     position: absolute;
-    width: 190px;
-    left: 1235px;
-    top: 208px;
+    width: 180px;
+    left: 1165px;
+    top: 195px;
 }
 #huma {
     position: absolute;
-    width: 120px;
-    left: 1120px;
-    top: 208px;
+    width: 117px;
+    left: 1056px;
+    top: 194px;
 }
 #crown {
     position: absolute;
-    width: 210px;
-    left: 1028px;
-    top: -10px;
+    width: 206px;
+    left: 967px;
+    top: -15px;
 }
 #merrill {
     position: absolute;
-    width: 215px;
-    left: 1188px;
-    top: 50px;
+    width: 204px;
+    left: 1121px;
+    top: 46px;
 }
 
 html, body {
@@ -149,10 +172,7 @@ html, body {
 }
 
 body {
-    background-image: url("images/Map.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: #ECE9D2;   /* neutral background */
 }
 
 .classrooms {
@@ -230,4 +250,32 @@ body {
 
 .rate:hover {
     transform: scale(1.2);
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+}
+
+#map-image {
+    width: 125%;
+    display: block;
+    left:20%
+}
+
+.classrooms {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none; /* optional */
+}
+
+.classrooms img {
+    position: absolute;
+    pointer-events: auto; /* so they can still be clicked */
 }
