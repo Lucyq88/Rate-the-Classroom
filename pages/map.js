@@ -30,7 +30,7 @@ $(document).ready(function() {
         "thim": "Thimann Labs",
         "phy": "Physical Sciences",
         "jbaskin": "Jack Baskin Engineering",
-        "jrl": "John R. Lewis College",
+        "jrl": "John R. Lewis College and Social Sciences",
         "science": "Science & Engineering Library",
         "earth": "Earth & Marine Sciences",
         "class12": "Classroom Unit",
