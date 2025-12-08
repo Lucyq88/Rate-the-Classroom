@@ -1,43 +1,6 @@
-
-.map-wrapper {
-    position: relative;
-    width: 100%;
-    max-width: 1600px;   
-    margin: 0 auto;      
-}
-
-#map-image {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.classrooms {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-
 html, body {
     height: 100%;
     margin: 0;
-}
-
-.map-background {
-    width: 100%;
-    height: 100%;
-    display: block;
-}
-
-.classrooms {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 }
 
 .classrooms img {
@@ -53,136 +16,121 @@ html, body {
 
 #kresge {
     position: absolute;
-    width: 202px;
-    left: 231px;
-    top: 96px;
+    width: 13.80%;
+    left: 20.00%;
+    top: 16.38%;
 }
 #porter {
     position: absolute;
-    width: 175px;
-    left: 231px;
-    top: 321px;
+    width: 11.70%;
+    left: 20.07%;
+    top: 44.48%;
 }
 #rcc {
     position: absolute;
-    width: 164px;
-    left: 346px;
-    top: 541px;
+    width: 10.80%;
+    left: 27.75%;
+    top: 72.44%;
 }
 #oakes {
     position: absolute;
-    width: 240px;
-    left: 478px;
-    top: 630px;
+    width: 16.33%;
+    left: 36.19%;
+    top: 83.62%;
 }
 #music {
     position: absolute;
-    width: 128px;
-    left: 618px;
-    top: 430px;
+    width: 8.71%;
+    left: 45.44%;
+    top: 58.26%;
 }
 #elena {
     position: absolute;
-    width: 163px;
-    left: 526px;
-    top: 296px;
+    width: 10.80%;
+    left: 39.45%;
+    top: 41.49%;
 }
 #thim {
     position: absolute;
-    width: 114px;
-    left: 542px;
-    top: 198px;
+    width: 7.70%;
+    left: 40.48%;
+    top: 29.39%;
 }
 #phy {
     position: absolute;
-    width: 160px;
-    left: 523px;
-    top: 121px;
+    width: 10.88%;
+    left: 39.18%;
+    top: 19.64%;
 }
 #jbaskin {
     position: absolute;
-    width: 173px;
-    left: 510px;
-    top: -5px;
+    width: 11.40%;
+    left: 38.50%;
+    top: 3.77%;
 }
 #jrl {
     position: absolute;
-    width: 269px;
-    left: 721px;
-    top: -35px;
+    width: 17.90%;
+    left: 52.24%;
+    top: -0.13%;
 }
 #science {
     position: absolute;
-    width: 123px;
-    left: 665px;
-    top: 120px;
+    width: 8.37%;
+    left: 48.50%;
+    top: 19.25%;
 }
 #earth {
     position: absolute;
-    width: 153px;
-    left: 717px;
-    top: 176px;
+    width: 10.41%;
+    left: 51.91%;
+    top: 26.40%;
 }
 #class12 {
     position: absolute;
-    width: 120px;
-    left: 850px;
-    top: 199px;
+    width: 7.80%;
+    left: 60.88%;
+    top: 29.52%;
 }
 #mchenry {
     position: absolute;
-    width: 171px;
-    left: 705px;
-    top: 294px;
+    width: 11.40%;
+    left: 51.15%;
+    top: 41.36%;
 }
 #cowell {
     position: absolute;
-    width: 229px;
-    left: 986px;
-    top: 254px;
+    width: 15.00%;
+    left: 69.80%;
+    top: 36.54%;
 }
 #stev {
     position: absolute;
-    width: 180px;
-    left: 1165px;
-    top: 195px;
+    width: 12.00%;
+    left: 81.43%;
+    top: 28.87%;
 }
 #huma {
     position: absolute;
-    width: 117px;
-    left: 1056px;
-    top: 194px;
+    width: 7.96%;
+    left: 74.36%;
+    top: 28.74%;
 }
 #crown {
     position: absolute;
-    width: 206px;
-    left: 967px;
-    top: -15px;
+    width: 13.70%;
+    left: 68.50%;
+    top: 2.60%;
 }
 #merrill {
     position: absolute;
-    width: 204px;
-    left: 1121px;
-    top: 46px;
-}
-
-html, body {
-    height: 100%;
-    margin: 0;
+    width: 13.70%;
+    left: 78.57%;
+    top: 10.01%;
 }
 
 body {
-    background: #ECE9D2;   /* neutral background */
-}
-
-.classrooms {
-    position: relative;
-    width: 100%;
-    transform: translate(75px, 35px);
-}
-
-.classrooms img{
-    height: auto;
+    background: #ECE9D2;
 }
 
 
@@ -272,10 +220,12 @@ body, html {
     top: 0;
     left: 0;
     width: 100%;
-    pointer-events: none; /* optional */
+    height: 100%;
+    pointer-events: none;
 }
 
 .classrooms img {
     position: absolute;
-    pointer-events: auto; /* so they can still be clicked */
+    pointer-events: auto;
+    height: auto;
 }
